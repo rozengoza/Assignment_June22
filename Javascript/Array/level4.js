@@ -3,8 +3,14 @@
 //true
 const name= 'hari'
 const allUsers = ['hari','shyam','thakuri']
-for (let names in allUsers){
-    if(names ==''){
-        console.log("User Exists")
-    }
+// for (let names in allUsers){
+//     if(names ==''){
+//         console.log("User Exists")
+//     }
+// }
+if(allUsers.includes('hari')){
+    console.log("It contains the name Hari")
+}
+else {
+    console.log("It doesnot contain the name Hari")
 }
