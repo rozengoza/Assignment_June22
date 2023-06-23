@@ -26,3 +26,5 @@ for (let  i=0; i<allUsers.length;i++){
 if(count>=2){
   console.log("duplicate exists")
 }
+
+
