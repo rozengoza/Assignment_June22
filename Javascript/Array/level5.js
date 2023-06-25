@@ -46,5 +46,19 @@ for(i=0;i<newArr.length;i++){
 }
 console.log(sum2)
 
+// classwork
+const myDetails = [
+    {id:3, name: 'hari'},
+    {id:5, name: 'shyam'},
+    {id:6, name: 'gopal'},
+  ]
+let newArr5=[]
+myDetails.map((item)=>{
+  newArr5.push(item.id)
+})
+  console.log(newArr5)
+// return only array of ids: expected output  [3,5,6]
+
+
 
 
