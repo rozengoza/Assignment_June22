@@ -15,39 +15,83 @@ const obj ={
   }
   score(obj.computer,obj.maths,obj.science)
 
-//second question 
+// //second question 
+// const userDetails={
+//     name:"kaylin",
+//   maths:23,
+//   science:35,
+//   gk:30
+//   }
+  
+//   //{
+//   //userName: "kaylin"
+//   //subjectCodes:['M','S','G']
+//   // subejctScore:['23','35','30']
+//   // }
+  
+//   const userName=userDetails.name
+//   // userName
+//   const score=Object.values(userDetails)
+//   // score
+//   tempArr=[]
+//   score.forEach((item)=>{
+//     // console.log(typeof item)
+//     if(typeof item !='string'){
+//       tempArr.push(item)
+//     }
+//   })
+//   console.log(tempArr)
+//   subTemp=[]
+//   const subjectCodes=Object.keys(userDetails)
+//   // subjectCodes
+//   subjectCodes.forEach((item)=>{
+//     if(item!='name'){
+//       console.log(item)
+//       subTemp.push(item.charAt(0))
+//     }
+//   })
+//   console.log(subTemp)
+
 const userDetails={
-    name:"kaylin",
-  maths:23,
-  science:35,
-  gk:30
+  name:"kaylin",
+maths:23,
+science:35,
+gk:30
+}
+
+//{
+//userName: "kaylin"
+//subjectCodes:['M','S','G']
+// subejctScore:['23','35','30']
+// }
+
+const userName=userDetails.name
+// userName
+const score=Object.values(userDetails)
+// score
+tempArr=[]
+score.forEach((item)=>{
+  // console.log(typeof item)
+  if(typeof item !='string'){
+    tempArr.push(item)
   }
-  
-  //{
-  //userName: "kaylin"
-  //subjectCodes:['M','S','G']
-  // subejctScore:['23','35','30']
-  // }
-  
-  const userName=userDetails.name
-  // userName
-  const score=Object.values(userDetails)
-  // score
-  tempArr=[]
-  score.forEach((item)=>{
-    // console.log(typeof item)
-    if(typeof item !='string'){
-      tempArr.push(item)
-    }
-  })
-  console.log(tempArr)
-  subTemp=[]
-  const subjectCodes=Object.keys(userDetails)
-  // subjectCodes
-  subjectCodes.forEach((item)=>{
-    if(item!='name'){
-      console.log(item)
-      subTemp.push(item.charAt(0))
-    }
-  })
-  console.log(subTemp)
+})
+// console.log(tempArr)
+subTemp=[]
+const subjectCodes=Object.keys(userDetails)
+// subjectCodes
+subjectCodes.forEach((item)=>{
+  if(item!='name'){
+    // console.log(item)
+    subTemp.push(item.charAt(0).toUpperCase())
+    //item=>item[0] yo  ni  use garna milcha 
+// object.entries ni  use garna milcha 
+  }
+})
+// console.log(subTemp)
+
+const newObj={}
+newObj.userName=userName
+newObj.subjectCodes=subTemp
+newObj.subjectScores=tempArr
+console.log(newObj)
